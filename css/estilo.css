@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor1: #000000;
+    --cor2: #ffffff;
+    --corfundo: rgb(149, 177, 240) ;
+    --corsombra: #00000088;
+    --corsombrabotao: rgba(131, 130, 130, 0.432);
+
+    --fonte-titulo:'Tilt Prism', cursive;
+    --font-texto:'Oswald', sans-serif;
+}
+
+
+body{
+    background-color: var(--corfundo);
+
+    }
+
+header{
+    font-family:var(--fonte-titulo);
+    font-size: 25px; 
+    color: var(--cor2);
+    text-align: center;
+}
+
+section{
+    background-color: var(--cor2);
+    border-radius: 18px;
+    box-shadow: 3px 3px 10px var(--corsombra);
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    padding: 15px;
+    
+}
+
+div{
+    font-family: var(--font-texto);
+    font-size: 20px;
+    padding: 8px;
+    margin: 10px;
+}
+
+section .button{
+    background-color: var(--cor2);
+    padding: 3px 20px 3px 20px;
+    border: none;
+    font-family: var(--font-texto);
+    font-weight: bold;
+    font-size: 20px;
+    margin: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px var(--corsombra);
+    transition: transform 0.5s ease-in;
+}
+
+section .button:hover{
+    transform: scale(1.1);
+    background-color: var(--corsombrabotao);
+    color: var(--cor2);
+}
+
+footer{
+    font-family: var(--font-texto);
+    font-size: 25px;
+    padding-top: 20px;
+    text-align: center;
+    color: var(--cor2);
+}
